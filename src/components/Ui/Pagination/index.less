@@ -1,0 +1,78 @@
+.pagination {
+  display: inline-flex;
+  align-items: center;
+}
+.pagination-item,
+.pagination-prev,
+.pagination-prev-elevator,
+.pagination-next,
+.pagination-next-elevator,
+.pagination-item-ellipsis {
+  color: #6C698D;
+  padding: 10rpx 20rpx;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Gen Jyuu Gothic Medium";
+}
+.pagination-prev,
+.pagination-next,
+.pagination-item,
+.pagination-prev-elevator,
+.pagination-next-elevator {
+  font-size: 16rpx;
+  border-radius: 8rpx;
+  background-color: #2B2847;
+  &:hover {
+    background-color: #FA6E43;
+    color: #FFFFFF;
+  }
+}
+.pagination-item-ellipsis {
+  font-size: 12rpx;
+  transition: all 0.1s;
+  &:hover {
+    color: #FFFFFF;
+  }
+}
+.pagination-prev,
+.pagination-next,
+.pagination-item,
+.pagination-next-elevator,
+.pagination-item-ellipsis {
+  margin-left: 16rpx;
+}
+.pagination-item-active {
+  background-color: #FA6E43;
+  color: #FFFFFF;
+}
+.pagination-disabled {
+  &:hover {
+    background-color: #2B2847;
+    color: #6C698D;
+    cursor: not-allowed;
+  }
+}
+@media screen and (max-width: 750px) {
+  .pagination-item,
+  .pagination-prev,
+  .pagination-prev-elevator,
+  .pagination-next,
+  .pagination-next-elevator {
+    padding: 8rpx * @mb 16rpx * @mb;
+  }
+  .pagination-prev,
+  .pagination-next,
+  .pagination-item,
+  .pagination-prev-elevator,
+  .pagination-next-elevator {
+    font-size: 12rpx * @mb;
+    border-radius: 6rpx * @mb;
+  }
+  .pagination-prev,
+  .pagination-next,
+  .pagination-item,
+  .pagination-next-elevator {
+    margin-left: 8rpx * @mb;
+  }
+}

@@ -1,0 +1,64 @@
+.palette {
+  position: fixed;
+  right: 0;
+  bottom: 43rpx;
+  z-index: 3;
+  .ul {
+    width: 106rpx;
+    height: 330rpx;
+    background: #3e3e65cc 0% 0% no-repeat padding-box;
+    border-radius: 8rpx 0rpx 0rpx 8rpx;
+    .li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 33.33%;
+      border-bottom: 1rpx solid #27243e;
+      box-sizing: border-box;
+      cursor: pointer;
+      .img {
+        margin-bottom: 7rpx;
+        width: 40rpx;
+        height: 40rpx;
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: #fff;
+        }
+      }
+      .text {
+        font: var(--unnamed-font-style-normal) normal
+          var(--unnamed-font-weight-bold) var(--unnamed-font-size-16) / 16rpx
+          var(--unnamed-font-family-gen-jyuu-gothic);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-f5f5f5);
+        text-align: center;
+        font: normal normal bold 16rpx/16rpx Gen Jyuu Gothic;
+        letter-spacing: 0rpx;
+        color: #f5f5f5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .palette {
+    bottom: 143rpx * @mb;
+    right: 10rpx * @mb;
+    .img {
+      width: 46rpx * @mb;
+      height: 46rpx * @mb;
+      background: #211d3b 0% 0% no-repeat padding-box;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 50%;
+        height: 50%;
+        fill: #fa6e42;
+      }
+    }
+  }
+}
